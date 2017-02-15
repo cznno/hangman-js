@@ -1,3 +1,5 @@
+//play online & automatically.
+
 //-------Initialization-------
 //actions
 var playerId="YourID";
