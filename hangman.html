@@ -5,26 +5,43 @@
     <title>Hangman Game</title>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="utf-8" http-equiv="encoding">
-
+    <link rel="stylesheet" href="./src/style.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
 </head>
 
 <body style="font-size: 1.4em;">
-    Single Player: <button onclick="raiseQuest()">Go!</button>Auto play: <button onclick="startGame()">Go!</button>
+    <div class="background">
+        Single Player:
+        <div id="mark">></div>
+        <button onclick="raiseQuest()">Go!</button>
 
-    <br/> --------------
-    <div style="font-size: 1.6em;margin-bottom:-10px;font-weight: bold">Your Word:<span style="margin: 15px;"></span></div>
+        <div style="font-size: 1.6em;margin-bottom:-10px;font-weight: bold">Your Word:<span style="margin: 15px;"></span></div>
 
-    Your Guess:<input id="input" onkeyup="postAGuess" maxlength="1">
-    <div style="font-size: 1.6em;margin-bottom:-10px;font-weight: bold">Game Status:</div>
-    <ul>
-        <li>remain <span>0</span> words to go</li>
-        <li><span>0</span> words correct</li>
-        <li><span>0</span> words passed</li>
-    </ul>
-    
+        Your Guess:<input id="input" onkeyup="postAGuess" maxlength="1">
+        <div style="font-size: 1.6em;margin-bottom:-10px;font-weight: bold">Game Status:</div>
+        <ul>
+            <li>remain <span>0</span> words to go</li>
+            <li><span>0</span> words correct</li>
+            <li><span>0</span> words passed</li>
+        </ul>
+    </div>
     <script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
-    <script src="./src/dict.js"></script>
-    <script></script>
+    <script src="./lib/jquery.color-2.1.2.min.js"></script>
+    <script src="./src/test_dict.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#mark').flash();
+
+        });
+        $.fn.flash = function () {
+            this.animate({
+                "color": 'transparent'
+            }, 1500)
+            this.animate({
+                "color": 'black'
+            }, 1500)
+        }
+    </script>
     <script src="./src/single_player.js"></script>
 </body>
 

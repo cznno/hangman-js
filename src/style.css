@@ -1,0 +1,15 @@
+html,body{
+    height:100%;
+    text-align: center;
+    margin: 0;
+    font-family: 'VT323', monospace;
+    font-size: 32px;
+}
+.background{
+    background-color: cadetblue;
+    height: 100%;
+    text-align: center;
+}
+#mark{
+    
+}
