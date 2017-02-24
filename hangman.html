@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Hangman Game</title>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="utf-8" http-equiv="encoding">
-    
+
 </head>
+
 <body style="font-size: 1.4em;">
-Single Player: <button onclick="raiseQuest()">Go!</button>
+    Single Player: <button onclick="raiseQuest()">Go!</button>Auto play: <button onclick="startGame()">Go!</button>
 
-<br/>
---------------
-<div style="font-size: 1.6em;margin-bottom:-10px;font-weight: bold">Your Word:<span style="margin: 15px;"></span></div>
+    <br/> --------------
+    <div style="font-size: 1.6em;margin-bottom:-10px;font-weight: bold">Your Word:<span style="margin: 15px;"></span></div>
 
-Your Guess:<input id="input" onkeyup="postAGuess" maxlength="1">
-<div style="font-size: 1.6em;margin-bottom:-10px;font-weight: bold">Game Status:</div>
-<ul>
-    <li>remain <span>0</span> words to go</li>
-    <li><span>0</span> words correct</li>
-    <li><span>0</span> words passed</li>
-</ul>
-Auto play: <button onclick="startGame()">Go!</button>
+    Your Guess:<input id="input" onkeyup="postAGuess" maxlength="1">
+    <div style="font-size: 1.6em;margin-bottom:-10px;font-weight: bold">Game Status:</div>
+    <ul>
+        <li>remain <span>0</span> words to go</li>
+        <li><span>0</span> words correct</li>
+        <li><span>0</span> words passed</li>
+    </ul>
+    
     <script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
     <script src="./src/dict.js"></script>
-    <script src="./src/hangman_online.js"></script>    
+    <script></script>
     <script src="./src/single_player.js"></script>
-
 </body>
+
 </html>
