@@ -11,12 +11,8 @@
 
 <body style="font-size: 1.4em;">
     <div class="background">
-        Single Player:
-        <div id="mark">></div>
-        <button onclick="raiseQuest()">Go!</button>
-
-        <div style="font-size: 1.6em;margin-bottom:-10px;font-weight: bold">Your Word:<span style="margin: 15px;"></span></div>
-
+        <div>Play:<span id="mark">></span><button onclick="raiseQuest()">Go!</button></div>
+        <div style="font-size: 1.6em;margin-bottom:-10px;font-weight: bold">Your Word:<span id="word" style="margin: 15px;">****</span></div>
         Your Guess:<input id="input" onkeyup="postAGuess" maxlength="1">
         <div style="font-size: 1.6em;margin-bottom:-10px;font-weight: bold">Game Status:</div>
         <ul>
@@ -29,18 +25,17 @@
     <script src="./lib/jquery.color-2.1.2.min.js"></script>
     <script src="./src/test_dict.js"></script>
     <script>
-        $(document).ready(function () {
-            $('#mark').flash();
-
-        });
-        $.fn.flash = function () {
-            this.animate({
-                "color": 'transparent'
-            }, 1500)
-            this.animate({
-                "color": 'black'
-            }, 1500)
-        }
+        // $(document).ready(function () {
+        //     function ani() {
+        //         $('#mark').animate({
+        //             "color": 'transparent'
+        //         }, 1500)
+        //         .animate({
+        //             "color": 'black'
+        //         }, 1500,ani)
+        //     }
+        //     ani();
+        // });
     </script>
     <script src="./src/single_player.js"></script>
 </body>

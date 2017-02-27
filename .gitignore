@@ -1,1 +1,6 @@
 .vscode
+/lib
+/src/*.txt
+/src/dict_10k.js
+/src/test_dict.js
+/temp/

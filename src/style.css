@@ -1,15 +1,42 @@
-html,body{
-    height:100%;
+html,
+body {
+    height: 100%;
     text-align: center;
     margin: 0;
     font-family: 'VT323', monospace;
     font-size: 32px;
+    background-color: #e0fa5f;
 }
-.background{
-    background-color: cadetblue;
+
+.background {
+    background-color: #58c444;
     height: 100%;
+    width:50%;
     text-align: center;
+    margin: 0 auto;
+    padding: 20px;
 }
-#mark{
-    
+
+#mark {}
+
+div{
+    padding: 0 20px;
+    margin: 20px;
+}
+button {
+    font-weight: 300;
+    font-size: 42px;
+    font-family: 'VT323', monospace;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    margin: 0;
+    display: inline-block;
+    appearance: none;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    border-radius: 4px;
+    padding: 0 20px;
 }

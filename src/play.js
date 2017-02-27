@@ -24,7 +24,7 @@ function raiseQuest() {
     dict.splice(questIndex, 1)
     chance=10
     t=''
-    $('span').eq(0).text(quest)    
+    $('#word').text(quest)    
 }
 
 //-------input--------
@@ -69,7 +69,7 @@ function postAGuess(gsChar) {
         $('span').eq(3).text(passed)        
         raiseQuest()
     }
-    $('span').eq(0).text(quest)
+    $('#word').text(quest)   
 }
 
 function gameOver() {
